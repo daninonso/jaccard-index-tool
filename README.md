@@ -11,4 +11,4 @@ The following Python libraries were used in addition to the *arcpy* import
 * *libpysal.weights* — used to import the *Queen* and *Rook* methods for assigning/defining neigborhood
 
 ## Images
-![ArcGIS Pro window showing Guilford fishnet, attribute table, and inputs for jaccard binary calculation using the Cluster1 and Cluster2 fields](<img width="1889" height="859" alt="guilford_binary" src="https://github.com/user-attachments/assets/a7a7311e-c567-4991-98ee-39f1057db388" />)
+<img width="1889" height="859" alt="ArcGIS Pro window showing Guilford fishnet, attribute table, and inputs for jaccard binary calculation using the Cluster1 and Cluster2 fields" src="https://github.com/user-attachments/assets/a7a7311e-c567-4991-98ee-39f1057db388" />
