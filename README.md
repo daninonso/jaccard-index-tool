@@ -10,5 +10,18 @@ The following Python libraries were used in addition to the *arcpy* import
 * *sklearn.metrics* — used to import the *jaccard_score* method
 * *libpysal.weights* — used to import the *Queen* and *Rook* methods for assigning/defining neigborhood
 
-## Images
-<img width="1889" height="859" alt="ArcGIS Pro window showing Guilford fishnet, attribute table, and inputs for jaccard binary calculation using the Cluster1 and Cluster2 fields" src="https://github.com/user-attachments/assets/a7a7311e-c567-4991-98ee-39f1057db388" />
+## Tool in action
+### Scenario - Binary Calculations
+![ArcGIS Pro window showing Guilford fishnet, attribute table, and inputs for jaccard binary calculation](https://github.com/user-attachments/assets/a7a7311e-c567-4991-98ee-39f1057db388) _Figure 1: Guilford_Fishnet binary calculation_
+
+> In this scenario, the symbology represents a theoretical binary distribution of naturally occuring spatial patterns. As seen in the table and the input fields of the geoprocessing tool, the fields being considered for calculation are _Cluster1_ and _Cluster2_. 1s in the field represent a presence in the pattern while 0s represent an absence.
+
+_placeholder for result_
+
+### Scenario - Set Calculations
+![ArcGIS Pro window showing Guilford fishnet, attribute table, and inputs for jaccard set calculation](https://github.com/user-attachments/assets/c4dc13cb-5181-4618-b656-5825b8c5fd49) _Figure 3: Guilford_Fishnet set calculation_
+
+> The symbology in this scenario represents a theoretical distribution of naturally occuring spatial patterns categorized as sets of uniform values. The fields being considered for calculation are _CLASS4BASE_ and _CLASS4RAND_, which are really randomly generated classifications generated for the sake of simulating pre-classified rasters.
+
+![set_classification](https://github.com/user-attachments/assets/46c01f18-9058-4b81-9a15-ba6fdcf6b128) 
+<br> _Figure 4: Symbology legend_
