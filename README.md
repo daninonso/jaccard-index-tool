@@ -92,4 +92,4 @@ Virtual environments play a crucial role in the configuration of this geoprocess
 
 <br>
 
-> If you still get a _ModuleNotFoundError_ from the tool message box, make sure you are in the right environment by confirming in the _Package Manager_ menu and in the _Python Command Prompt_ terminal. Run `conda activate <correct_env_name>` in the terminal to switch to the right environment. The close and restart your ArcGIS Pro project.
+> If you still get a _ModuleNotFoundError_ from the tool message box, make sure you are in the right environment by confirming in the _Package Manager_ menu and in the _Python Command Prompt_ terminal. Run `conda activate <correct_env_name>` in the terminal to switch to the right environment. The close and restart your project.
