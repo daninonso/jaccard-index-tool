@@ -3,16 +3,6 @@ Jaccard index calculations leverage statistical computation to derive a similari
 
 <br>
 
-## Python libraries
-The following Python libraries were used in addition to the *arcpy* import
-* *pandas* — preferred for converting ArcGIS Pro's attribute tables into dataframes for easier data manipulation
-* *goepandas* — preferred for its ability to preserve spatial relationships of datasets
-* *numpy* — provides array of easy to us statistical methods like mean and standard deviation
-* *sklearn.metrics* — used to import the *jaccard_score* method
-* *libpysal.weights* — used to import the *Queen* and *Rook* methods for assigning/defining neigborhood
-
-<br>
-
 ## Scenario 1 - Binary Calculations
 
 ![ArcGIS Pro window showing Guilford fishnet, attribute table, and inputs for jaccard binary calculation](https://github.com/user-attachments/assets/a7a7311e-c567-4991-98ee-39f1057db388) _Figure 1: Guilford_Fishnet binary calculation_
@@ -53,5 +43,26 @@ The symbology in this scenario represents a theoretical distribution of naturall
 
 <br>
 
+## Python libraries
+The following Python libraries were used in addition to the *arcpy* import
+* *pandas* — preferred for converting ArcGIS Pro's attribute tables into dataframes for easier data manipulation
+* *goepandas* — preferred for its ability to preserve spatial relationships of datasets
+* *numpy* — provides array of easy to us statistical methods like mean and standard deviation
+* *sklearn.metrics* — used to import the *jaccard_score* method
+* *libpysal.weights* — used to import the *Queen* and *Rook* methods for assigning/defining neigborhood
+
+<br>
+
 ## Configuration notes
-Virtual environments play a crucial role in 
+Virtual environments play a crucial role in the configuration of this geoprocessing tool. The default environment `arcgispro-py3` is setup to integrate all functionalities of the ArcPy library, the other libraries listed above are required but not pre-installed in this environment. It is not advised to install the additional packages in the ArcGIS default environment to avoid conflicting Python versions. The following steps explain how to install the packages using Conda. 
+
+1. **Create the geoprocessing tool**
+   * Open a new project in ArcGIS Pro
+   * Locate the catalog pane and right click on the toolbox folder
+   * Create a new _Script tool_
+   * Name your script tool and set the parameters as follows _insert screenshot of parameters_
+   * Locate the _Execution_ side menu item
+   * Copy and paste the code from _jaccard_index.py_
+   * Save all changes
+3. **Install Conda** — visit the official [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) and follow the steps to install
+4. **Open terminal** — right click the file explorer window in the location of your downloaded 
