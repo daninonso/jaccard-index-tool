@@ -59,10 +59,37 @@ Virtual environments play a crucial role in the configuration of this geoprocess
 1. **Create the geoprocessing tool**
    * Open a new project in ArcGIS Pro
    * Locate the catalog pane and right click on the toolbox folder
+   * Click on _New_
    * Create a new _Script tool_
-   * Name your script tool and set the parameters as follows _insert screenshot of parameters_
+   * Name your script tool and set the parameters as follows
+     
+   <img width="733" height="297" alt="scriptTool_params" src="https://github.com/user-attachments/assets/d3d07338-69bd-45df-8235-5f9c27048ee2" />
+   
    * Locate the _Execution_ side menu item
+     
+    <img width="696" height="479" alt="scriptTool_execution" src="https://github.com/user-attachments/assets/0e3cccae-dc41-4cdc-91f3-fbfdf3db22d4" />
+
    * Copy and paste the code from _jaccard_index.py_
    * Save all changes
 3. **Install Conda** — visit the official [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) and follow the steps to install
-4. **Open terminal** — right click the file explorer window in the location of your downloaded 
+4. **Open terminal** — right click on your ArcGIS Pro app icon, select _Open file location_, click on the _Python Command Prompt_ shortcut
+5. **Check Conda version** — confirm that you have conda installed by running this command `conda --version`
+6. **Check virtual environments** — check the list of environments by running this command `conda env list`
+7. **Clone ArcGIS environment** — clone the `arcgispro-py3` environment using this command `conda create --name <your_env_name> --clone arcgispro-py3`
+
+<br>
+
+> You can not clone an active environment. Active environments are usually indicated by an asterik(*) in the list of environments. If _arcgispro-py3_ is active, run this command `conda deactivate`
+
+<br>
+
+8. **Install packages** — once the _arcgispro-py3_ environment has been cloned successfully, install the required packages using this command `conda install pandas geopandas numpy sklearn.metrics libpysal.weights`
+9. **Change environment** — after successfully installing the pacakges, open your _Jaccard_ ArcGIS Pro project, click on the _Project_ menu in the top left corner, locate the _Package Manager_ menu item, change the active environment to your new one.
+
+<img width="1909" height="982" alt="package_mngr" src="https://github.com/user-attachments/assets/da722c92-4aee-444e-8787-0adb656b9089" />
+
+10. **Restart project & Run** — restart your project for the changes to take effect, after restart, locate the script tool in _Catalog > Toolbox_, right click the script tool, click _Open_, plug in your inputs as seen in either scenario up top, hit _Run_.
+
+<br>
+
+> If you still get a _ModuleNotFoundError_ from the tool message box, make sure you are in the right environment by confirming in the _Package Manager_ menu and in the _Python Command Prompt_ terminal. Run `conda activate <correct_env_name>` in the terminal to switch to the right environment. The close and restart your ArcGIS Pro project.
