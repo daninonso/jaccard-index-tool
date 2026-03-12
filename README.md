@@ -88,7 +88,7 @@ Virtual environments play a crucial role in the configuration of this geoprocess
 
 <img width="1909" height="982" alt="package_mngr" src="https://github.com/user-attachments/assets/da722c92-4aee-444e-8787-0adb656b9089" />
 
-10. **Restart project & Run** — restart your project for the changes to take effect, after restart, locate the script tool in _Catalog > Toolbox_, right click the script tool, click _Open_, plug in your inputs as seen in either scenario up top, hit _Run_.
+10. **Restart project & Run** — restart your project for the changes to take effect, after restart, locate the script tool in _Catalog > Toolbox_, right click the script tool, click _Open_, plug in your desired inputs, hit _Run_.
 
 <br>
 
