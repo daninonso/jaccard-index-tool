@@ -47,7 +47,7 @@ The symbology in this scenario represents a theoretical distribution of naturall
 The following Python libraries were used in addition to the *arcpy* import
 * *pandas* — preferred for converting ArcGIS Pro's attribute tables into dataframes for easier data manipulation
 * *goepandas* — preferred for its ability to preserve spatial relationships of datasets
-* *numpy* — provides array of easy to us statistical methods like mean and standard deviation
+* *numpy* — provides array of easy to use statistical methods like mean and standard deviation
 * *sklearn.metrics* — used to import the *jaccard_score* method
 * *libpysal.weights* — used to import the *Queen* and *Rook* methods for assigning/defining neigborhood
 
@@ -92,4 +92,4 @@ Virtual environments play a crucial role in the configuration of this geoprocess
 
 <br>
 
-> If you still get a _ModuleNotFoundError_ from the tool message box, make sure you are in the right environment by confirming in the _Package Manager_ menu and in the _Python Command Prompt_ terminal. Run `conda activate <correct_env_name>` in the terminal to switch to the right environment. The close and restart your project.
+> If you still get a _ModuleNotFoundError_ from the tool message box, make sure you are in the right environment by confirming in the _Package Manager_ menu and in the _Python Command Prompt_ terminal. Run `conda activate <correct_env_name>` in the terminal to switch to the right environment. Then close and restart your project.
